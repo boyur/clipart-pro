@@ -293,4 +293,23 @@ $(document).ready(function () {
     });
   })();
 
+  // resizing block
+  (function () {
+
+    $.fn.equivalent = function () {
+      var $blocks = $(this),
+          maxH = $blocks.eq(0).height();
+
+      $blocks.each(function () {
+        maxH = ( $(this).height() > maxH) ? $(this).height() : maxH;
+      });
+
+      $blocks.height(maxH);
+    };
+
+    $('.why-us__item-title').equivalent();
+    $('.why-us__item-main').equivalent();
+    $('.team__item-main').equivalent();
+  })();
+
 });
