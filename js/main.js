@@ -190,11 +190,9 @@ $(document).ready(function () {
     sliderContent.each(function () {
       if (maxHeightContent < $(this).height()) {
         maxHeightContent = $(this).height();
-        console.log(maxHeightContent);
       }
     });
 
-    console.log(maxHeightContent);
     jqSider.css('height', maxHeightContent + "px"); // setHeight
     // -- END -- //
 
@@ -242,7 +240,7 @@ $(document).ready(function () {
 
   //PopUp
   (function () {
-    $('.portfolio__link').magnificPopup({
+    $('.video__link').magnificPopup({
       type: 'iframe',
 
 
