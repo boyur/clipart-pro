@@ -3190,6 +3190,9 @@ h2 {
 
 .contacts__icon {
   font-size: 54px; }
+  .contacts__icon a {
+    text-decoration: none;
+    color: white; }
 
 .contacts__text {
   font-size: 22px; }

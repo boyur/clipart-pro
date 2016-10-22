@@ -24,6 +24,11 @@
 
 .contacts__icon {
   font-size: 54px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .contacts__text {
